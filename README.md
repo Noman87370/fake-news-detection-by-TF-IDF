@@ -1,27 +1,28 @@
 # Fake News Detection via Text Feature Integration and Convolutional Neural Networks
 
 <p align="center">
-  <strong>A Deep Learning Approach for Automated Fake News Classification</strong>
+  <strong>IEEE QPAIN 2026 Research Publication</strong>
 </p>
 
 <p align="center">
+  <a href="https://ieeexplore.ieee.org/abstract/document/11545752/">
+    <img src="https://img.shields.io/badge/IEEE-Xplore-blue?style=for-the-badge&logo=ieee" />
+  </a>
+  <img src="https://img.shields.io/badge/Year-2026-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Domain-NLP-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Deep%20Learning-CNN-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Task-Fake%20News%20Detection-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-ML-yellow?style=for-the-badge&logo=python" />
 </p>
 
 ## 📌 Overview
 
-This repository contains the implementation of our research work, **"Fake News Detection via Text Feature Integration and Convolutional Neural Networks."**
+This repository contains the implementation of our research paper, **"Fake News Detection via Text Feature Integration and Convolutional Neural Networks,"** published in the 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN).
 
-The rapid spread of misinformation across digital platforms has created a growing need for reliable and automated fake news detection systems.
-
-This research proposes a custom Convolutional Neural Network (CNN) architecture that integrates textual information from both news titles and full articles to distinguish between fake and real news.
+The rapid spread of misinformation across digital platforms threatens public trust and information integrity. This research proposes a custom Convolutional Neural Network (CNN) architecture that integrates textual information from both news titles and full articles to distinguish between fake and real news.
 
 The proposed model uses an embedding layer followed by multiple one-dimensional convolutional layers to extract meaningful linguistic patterns, contextual information, and semantic features from news content.
 
-The model achieves a reported accuracy of **99.03%**, demonstrating the effectiveness of CNN-based approaches for automated text classification.
+The model achieved a reported accuracy of **99.03%**, demonstrating the effectiveness of CNN-based approaches for automated fake news classification.
 
 ## 🎯 Research Objectives
 
@@ -41,14 +42,15 @@ The proposed model follows a sequential deep learning architecture designed for 
 **1. Text Preprocessing**
 
 - Tokenization of news articles.
+- Vocabulary size of up to 10,000 words.
 - Integer encoding of text sequences.
 - Sequence padding to a fixed length of 200 tokens.
 
 **2. Embedding Layer**
 
 - Embedding dimension: 100
-- Vocabulary size: vocab_size + 1
 - Converts integer-encoded words into dense vector representations.
+- Captures semantic relationships between words.
 
 **3. Convolutional Layers**
 
@@ -65,7 +67,7 @@ These layers capture local and fine-grained linguistic patterns from the news te
 
 **4. Global Max Pooling**
 
-GlobalMaxPooling1D extracts the most prominent features from the convolutional feature maps and produces a fixed-size representation.
+GlobalMaxPooling1D extracts the most prominent features from the convolutional feature maps.
 
 **5. Dense Layers and Dropout**
 
@@ -132,20 +134,21 @@ A single neuron with sigmoid activation generates a probability score between 0 
 
 ## 📊 Dataset Description
 
-The research uses a large-scale dataset containing real and fake news articles sourced from two separate CSV files:
+The research uses a dataset containing real and fake news articles sourced from two CSV files:
 
 - `Fake.csv`
 - `True.csv`
 
 The dataset contains news titles and full article content.
 
-Both textual sources are integrated to provide the model with more comprehensive linguistic information.
+Both textual sources are integrated to provide the model with comprehensive linguistic information.
 
 ## ⚙️ Model Training Configuration
 
 | Parameter | Configuration |
 |---|---|
 | Architecture | Custom CNN |
+| Vocabulary Size | Up to 10,000 |
 | Embedding Dimension | 100 |
 | Input Sequence Length | 200 |
 | Optimizer | Adam |
@@ -175,8 +178,6 @@ The proposed CNN model was evaluated against traditional machine learning classi
 | Fake News | 99.61% | 98.30% | 98.95% |
 | Real News | 98.16% | 99.58% | 98.86% |
 | Average | 98.89% | 98.94% | 98.90% |
-
-The model demonstrates strong classification performance across both fake and real news categories.
 
 ### Evaluation Metrics
 
@@ -238,7 +239,7 @@ Fake-News-Detection-CNN/
     └── README.md
 ```
 
-*Note: This is a suggested structure. Adjust the filenames and directories according to the actual implementation.*
+*Adjust the filenames and directories according to the actual implementation.*
 
 ## 🚀 Getting Started
 
@@ -285,15 +286,55 @@ Potential future improvements include:
 - Exploring transformer-based architectures.
 - Evaluating generalization on independent and more recent datasets.
 
-## 📄 Research Paper
+## 📄 Research Publication
 
 **Title:** Fake News Detection via Text Feature Integration and Convolutional Neural Networks
 
-**Research Area:** Natural Language Processing and Deep Learning
+**Authors:**
 
-**Main Contribution:** A custom CNN architecture integrating news titles and article text for automated fake news classification.
+1. Saidul Alam Sakib
+2. Abdullah Al Noman
+3. Naimul Abedin Rafsan
+4. Pranta Dev
+5. Abdullah Al Afiq
+6. SM Shahidullah Kaiser Talib
+7. Md Arfatul Islam
 
-*Add the official publication venue, year, DOI, and author information here if applicable.*
+**Conference:** 2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)
+
+**Publication Date:** April 16, 2026
+
+**Pages:** 1–6
+
+**Publisher:** IEEE
+
+**IEEE Xplore:** [Read the Published Research Paper](https://ieeexplore.ieee.org/abstract/document/11545752/)
+
+**Google Scholar:** [View Publication](https://scholar.google.com/scholar?oi=bibs&cluster=8425164117008496901&btnI=1&hl=en)
+
+## 📚 Citation
+
+If you use this research in your work, please cite the original publication:
+
+```bibtex
+@inproceedings{sakib2026fake,
+  title={Fake News Detection via Text Feature Integration
+         and Convolutional Neural Networks},
+  author={Sakib, Saidul Alam and
+          Al Noman, Abdullah and
+          Rafsan, Naimul Abedin and
+          Dev, Pranta and
+          Al Afiq, Abdullah and
+          Talib, SM Shahidullah Kaiser and
+          Islam, Md Arfatul},
+  booktitle={2026 IEEE 2nd International Conference on
+             Quantum Photonics, Artificial Intelligence
+             \& Networking (QPAIN)},
+  pages={1--6},
+  year={2026},
+  publisher={IEEE}
+}
+```
 
 ## ⭐ Acknowledgements
 
@@ -304,3 +345,4 @@ If you find this project useful, consider giving this repository a ⭐ star.
 ---
 
 **Research Areas:** Artificial Intelligence | Natural Language Processing | Deep Learning | CNN | Fake News Detection | Text Classification
+
